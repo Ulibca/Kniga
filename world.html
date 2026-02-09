@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Архив Хроникера | Другая Реальность</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🗒️</text></svg>">
+</head>
+<body>
+        <!-- Навигация -->
+    <nav class="main-nav">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html" class="logo-link">
+                    <span class="logo-icon">🗒️</span>
+                    <span class="logo-text">Архив Хроникера</span>
+                </a>
+            </div>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html"><i class="fas fa-fire"></i> Костёр</a></li>
+                <li><a href="books.html"><i class="fas fa-book"></i> Хроники</a></li>
+                <li><a href="world.html"><i class="fas fa-map"></i> Карта</a></li>
+                <li><a href="author.html"><i class="fas fa-broadcast-tower"></i> Радиоузел</a></li>
+                <li><a href="blog.html"><i class="fas fa-walkie-talkie"></i> Рация</a></li>
+                <li class="search-item">
+                    <div class="search-box">
+                        <input type="text" id="searchInput" placeholder="Сканирование...">
+                        <button id="searchBtn"><i class="fas fa-search"></i></button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Страница мира - Карта -->
+            <header class="page-header">
+                <h1>КАРТА МИРА</h1>
+                <div class="page-subtitle">ФРАКЦИИ, ЛОКАЦИИ, АНОМАЛИИ И ОБИТАТЕЛИ ЗОНЫ</div>
+            </header>
+            
+            <div class="world-navigation">
+                <div class="world-nav-tabs">
+                    <button class="world-tab active" data-tab="factions">Фракции и силы</button>
+                    <button class="world-tab" data-tab="locations">Локации</button>
+                    <button class="world-tab" data-tab="characters">Персонажи</button>
+                    <button class="world-tab" data-tab="anomalies">Аномалии и артефакты</button>
+                </div>
+            </div>
+            
+            <div class="world-content">
+                <div class="world-tab-content active" id="factions-content">
+                    <h2><i class="fas fa-users"></i> Фракции и силы Зоны</h2>
+                    
+                    <div class="factions-grid">
+                        <div class="faction-card">
+                            <div class="faction-header duty">
+                                <h3>ДОЛГ</h3>
+                                <div class="faction-status alive">Активна</div>
+                            </div>
+                            <div class="faction-description">
+                                <p>Военизированная организация, считающая Зону угрозой человечеству, которую необходимо уничтожить любой ценой. Жёсткая иерархия, дисциплина, неприятие мутантов и аномалий.</p>
+                            </div>
+                            <div class="faction-ideology">
+                                <strong>Идеология:</strong> Уничтожение Зоны, защита человечества
+                            </div>
+                            <div class="faction-quote">
+                                "Зона должна быть очищена. Любой ценой."
+                            </div>
+                        </div>
+                        
+                        <div class="faction-card">
+                            <div class="faction-header freedom">
+                                <h3>СВОБОДА</h3>
+                                <div class="faction-status alive">Активна</div>
+                            </div>
+                            <div class="faction-description">
+                                <p>Анархистское объединение сталкеров, считающих Зону достоянием всего человечества. Выступают за свободный доступ в Зону и изучение её тайн без контроля со стороны государств.</p>
+                            </div>
+                            <div class="faction-ideology">
+                                <strong>Идеология:</strong> Свободный доступ к Зоне, анархизм
+                            </div>
+                            <div class="faction-quote">
+                                "Зона принадлежит всем, а не избранным!"
+                            </div>
+                        </div>
+                        
+                        <div class="faction-card">
+                            <div class="faction-header monolith">
+                                <h3>МОНОЛИТ</h3>
+                                <div class="faction-status active">Активна</div>
+                            </div>
+                            <div class="faction-description">
+                                <p>Религиозный культ, поклоняющийся Монолиту в центре Зоны. Считают Зону священным местом, а её аномалии — проявлениями высшей силы. Агрессивны к чужакам.</p>
+                            </div>
+                            <div class="faction-ideology">
+                                <strong>Идеология:</strong> Религиозный культ, поклонение Монолиту
+                            </div>
+                            <div class="faction-quote">
+                                "Во имя Монолита! Да защитит он нас!"
+                            </div>
+                        </div>
+                        
+                        <div class="faction-card">
+                            <div class="faction-header will">
+                                <h3>ВОЛЯ</h3>
+                                <div class="faction-status unknown">Статус неизвестен</div>
+                            </div>
+                            <div class="faction-description">
+                                <p>Таинственная группа, стремящаяся понять истинную природу Зоны. Избегают конфликтов, предпочитают наблюдение и исследование. Их цели и мотивы неясны.</p>
+                            </div>
+                            <div class="faction-ideology">
+                                <strong>Идеология:</strong> Исследование и понимание Зоны
+                            </div>
+                            <div class="faction-quote">
+                                "Чтобы выжить, нужно понять. Чтобы понять, нужно наблюдать."
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="world-tab-content" id="locations-content">
+                    <h2><i class="fas fa-map-marked-alt"></i> Локации Зоны</h2>
+                    
+                    <div class="locations-grid">
+                        <div class="location-card">
+                            <div class="location-image crystal-forest"></div>
+                            <div class="location-content">
+                                <h3>Хрустальный лес</h3>
+                                <div class="location-danger high">Высокая опасность</div>
+                                <p>Аномальная зона, где деревья превратились в хрустальные структуры. Эхо прошлого здесь материально — можно услышать голоса, которых уже нет. Туман практически непроницаем.</p>
+                                <div class="location-features">
+                                    <span class="feature"><i class="fas fa-exclamation-triangle"></i> Акустические аномалии</span>
+                                    <span class="feature"><i class="fas fa-eye-slash"></i> Плотный туман</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="location-card">
+                            <div class="location-image bar-100"></div>
+                            <div class="location-content">
+                                <h3>Бар "100 Рентген"</h3>
+                                <div class="location-danger low">Низкая опасность</div>
+                                <p>Нейтральная территория, где сталкеры обмениваются информацией, артефактами и отдыхают. Владелец — Сидорович. Единственное правило: никакого насилия внутри.</p>
+                                <div class="location-features">
+                                    <span class="feature"><i class="fas fa-beer"></i> Нейтральная территория</span>
+                                    <span class="feature"><i class="fas fa-comments"></i> Торговля и информация</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="location-card">
+                            <div class="location-image jupiter"></div>
+                            <div class="location-content">
+                                <h3>Завод "Юпитер"</h3>
+                                <div class="location-danger medium">Средняя опасность</div>
+                                <p>Заброшенный промышленный комплекс. Полон технических аномалий, электромагнитных бурь и "техногенных призраков" — остаточных явлений прошлой деятельности.</p>
+                                <div class="location-features">
+                                    <span class="feature"><i class="fas fa-industry"></i> Техногенные аномалии</span>
+                                    <span class="feature"><i class="fas fa-ghost"></i> Остаточные явления</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</body>
+</html>

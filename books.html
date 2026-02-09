@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Архив Хроникера | Другая Реальность</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🗒️</text></svg>">
+</head>
+<body>
+        <!-- Навигация -->
+    <nav class="main-nav">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html" class="logo-link">
+                    <span class="logo-icon">🗒️</span>
+                    <span class="logo-text">Архив Хроникера</span>
+                </a>
+            </div>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html"><i class="fas fa-fire"></i> Костёр</a></li>
+                <li><a href="books.html"><i class="fas fa-book"></i> Хроники</a></li>
+                <li><a href="world.html"><i class="fas fa-map"></i> Карта</a></li>
+                <li><a href="author.html"><i class="fas fa-broadcast-tower"></i> Радиоузел</a></li>
+                <li><a href="blog.html"><i class="fas fa-walkie-talkie"></i> Рация</a></li>
+                <li class="search-item">
+                    <div class="search-box">
+                        <input type="text" id="searchInput" placeholder="Сканирование...">
+                        <button id="searchBtn"><i class="fas fa-search"></i></button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+            <!-- Страница книг - Хроники -->
+            <header class="page-header">
+                <h1>ХРОНИКИ</h1>
+                <div class="page-subtitle">АРХИВ ЗАПИСЕЙ ИЗ НАЙДЕННОГО БЛОКНОТА</div>
+            </header>
+            
+            <div class="books-container">
+                <div class="book-card">
+                    <div class="book-header">
+                        <div class="book-icon"><i class="fas fa-book-dead"></i></div>
+                        <h2>Книга 1: Другая Реальность</h2>
+                        <div class="book-status completed">Текст завершён. Ожидает публикации.</div>
+                    </div>
+                    
+                    <div class="book-description">
+                        <p>Первые записи, найденные в потрёпанном блокноте у старого костра вблизи Кордона. Хроника первых месяцев в Зоне, полная непонимания, страха и попыток осмыслить новую реальность.</p>
+                    </div>
+                    
+                    <div class="chapter-list">
+                        <h3>Содержание (первые 5 глав):</h3>
+                        <ul>
+                            <li><a href="#"><span class="chapter-number">Глава 1</span> Пробуждение в тумане</a></li>
+                            <li><a href="#"><span class="chapter-number">Глава 2</span> Первая встреча с "Долгом"</a></li>
+                            <li><a href="#"><span class="chapter-number">Глава 3</span> Ночь у Бара "100 Рентген"</a></li>
+                            <li><a href="#"><span class="chapter-number">Глава 4</span> Аномалия "Жаркий лёд"</a></li>
+                            <li><a href="#"><span class="chapter-number">Глава 5</span> Пустые в тени заводских цехов</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="book-actions">
+                        <a href="#" class="btn btn-secondary"><i class="fas fa-scroll"></i> Читать с начала</a>
+                        <a href="#" class="btn btn-outline"><i class="fas fa-list"></i> Все главы (24)</a>
+                    </div>
+                </div>
+                
+                <div class="book-card active-book">
+                    <div class="book-header">
+                        <div class="book-icon"><i class="fas fa-atlas"></i></div>
+                        <h2>Книга 2: Атлас Новой Реальности</h2>
+                        <div class="book-status in-progress">Текущий проект. Публикуется по мере написания.</div>
+                    </div>
+                    
+                    <div class="book-description">
+                        <p>Продолжение хроники. "Гусь" начинает понимать правила Зоны, её структуру и обитателей. Появляются первые карты, схемы, попытки систематизировать знания о фракциях, аномалиях и артефактах.</p>
+                    </div>
+                    
+                    <div class="chapter-list">
+                        <h3>Последние опубликованные главы:</h3>
+                        <ul>
+                            <li class="new-chapter"><a href="#"><span class="chapter-number">Глава 24</span> Эхо в Хрустальном лесу <span class="new-badge">НОВАЯ</span></a></li>
+                            <li><a href="#"><span class="chapter-number">Глава 23</span> Переговоры с "Крылом"</a></li>
+                            <li><a href="#"><span class="chapter-number">Глава 22</span> Сон в Саду Зовущих</a></li>
+                            <li><a href="#"><span class="chapter-number">Глава 21</span> Артефакт "Осколок грёз"</a></li>
+                            <li><a href="#"><span class="chapter-number">Глава 20</span> Выжившие на заводе "Юпитер"</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="book-actions">
+                        <a href="#" class="btn btn-primary"><i class="fas fa-book-open"></i> Читать последнюю главу</a>
+                        <a href="#" class="btn btn-outline"><i class="fas fa-list"></i> Все главы (24)</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="archive-sections">
+                <div class="archive-card">
+                    <div class="archive-icon"><i class="fas fa-campfire"></i></div>
+                    <h3>"Мысли у костра"</h3>
+                    <p>Архив философских мини-эссе, отсортированный по номерам и темам.</p>
+                    <div class="archive-count">47 записей</div>
+                    <a href="#" class="btn btn-outline archive-btn">Просмотреть архив</a>
+                </div>
+                
+                <div class="archive-card">
+                    <div class="archive-icon"><i class="fas fa-snowflake"></i></div>
+                    <h3>"Зимние легенды"</h3>
+                    <p>Внесюжетные истории, байки и легенды Зоны, рассказанные у костра.</p>
+                    <div class="archive-count">12 историй</div>
+                    <a href="#" class="btn btn-outline archive-btn">Просмотреть архив</a>
+                </div>
+            </div>
+        </section>
+</body>
+</html>
