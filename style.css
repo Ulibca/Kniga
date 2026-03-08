@@ -955,6 +955,26 @@ a:hover {
 .author-avatar {
     flex-shrink: 0;
 }
+/*
+.avatar-icon {
+    font-size: 5rem;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(26, 26, 26, 0.7);
+    border-radius: 50%;
+    border: 2px solid var(--color-accent-olive);
+}
+*/
+
+.character-block {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 40px;
+    align-items: flex-start;
+}
 
 .avatar-icon {
     font-size: 5rem;
@@ -966,6 +986,11 @@ a:hover {
     background-color: rgba(26, 26, 26, 0.7);
     border-radius: 50%;
     border: 2px solid var(--color-accent-olive);
+    flex-shrink: 0; /* чтобы аватар не сжимался */
+}
+
+.character-info {
+    flex: 1;
 }
 
 .author-info {
